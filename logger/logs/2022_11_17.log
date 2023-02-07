@@ -1,0 +1,210 @@
+[2022-11-17 10:17:52,652] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:17:52,685] - logger_.py] - DEBUG: 
+当前请求接口是: 存储注册时的设备信息(注册成功后调首页登录)saveDeviceInfo,
+请求参数: {'adbEnabled': 0, 'androidId': 'b109171b35c94873', 'availableStorage': ' 37.3796GB', 'battery': '81', 'codeName': 'REL', 'cpu': 'arm64-v8a', 'cpuInfo': ' ', 'cpuSpeed': '1989000KHz', 'currentWifi': '"HAI-IT-5G"', 'detailAddress': '', 'deviceLanguage': 'zh', 'deviceMac': 'D0:D2:C4:2F:54:3D', 'deviceModel': 'OPPO#CPH1825', 'deviceSerial': 'PR7TQS9SPZY5IN5T', 'deviceSoftwareVersion': '11', 'deviceVersionType': 'user', 'displayMetrics': '1080,2196', 'fingerPrint': 'OPPO/CPH1825/CPH1825:8.1.0/O11019/1539160089:user/release-keys', 'gaid': 'null', 'hardware': 'mt6771', 'imei': '354310678254322', 'imsi': '452050408783768', 'inDoor': -1, 'lag': '', 'lng': '', 'locationAddress': '', 'locationCity': '', 'mobileName': 'OPPO F9 Pro', 'model': 'OPPO#CPH1825', 'networkOperator': '', 'networkOperatorName': '', 'networkType': 'wifi', 'operatorName': '中国移动,无服务', 'os': '8.1.0', 'phoneAvailableRam': ' 3.4562GB', 'phoneCardNum': '', 'phoneOs': 'Android', 'phoneTotalRam': 'MemTotal:        5850108 kB', 'phonecardCount': 2, 'product': 'CPH1825', 'radioVersion': 'M_V3_P10,M_V3_P10', 'resolutionHeight': '2196', 'resolutionWidth': '1080', 'rooted': 0, 'routerMac': 'f4:a4:d6:56:f9:94', 'runtimeAvailableMemory': ' 0.3583GB', 'runtimeMaxMemory': ' 0.3750GB', 'simState': 1, 'simulator': 0, 'timeZone': 'GMT+08:00', 'totalStorage': ' 50.1089GB', 'turnOnTime': '2022-10-18 09:33:08', 'uuid': 'ba8a3ffc973faaea0009ef8aaf2f55fe4b271152a89d93aa36616ae1dbcf4ae0', 'uuidOriginal': '[-70, -118, 63, -4, -105, 63, -86, -22, 0, 9, -17, -118, -81, 47, 85, -2, 75, 39, 17, 82, -88, -99, -109, -86, 54, 97, 106, -31, -37, -49, 74, -32]'},
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '433a40ae18b0b2b0', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 10:17:52,686] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:17:52,687] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:17:52,790] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '576533f8d26f5ea2', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 10:17:52,790] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:17:52,791] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:17:53,275] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '344125bd29c00896', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 10:17:53,276] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:17:53,277] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:17:53,488] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：cb3d9ae4bf1f3e6d
+[2022-11-17 10:17:53,489] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：cb3d9ae4bf1f3e6d
+[2022-11-17 10:17:53,491] - logger_.py] - ERROR: 当前请求的错误: '成功' != '通讯录不能为空'
+- 成功
++ 通讯录不能为空
+
+[2022-11-17 10:17:53,492] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:19:18,875] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:19:18,904] - logger_.py] - DEBUG: 
+当前请求接口是: 存储注册时的设备信息(注册成功后调首页登录)saveDeviceInfo,
+请求参数: {'adbEnabled': 0, 'androidId': 'b109171b35c94873', 'availableStorage': ' 37.3796GB', 'battery': '81', 'codeName': 'REL', 'cpu': 'arm64-v8a', 'cpuInfo': ' ', 'cpuSpeed': '1989000KHz', 'currentWifi': '"HAI-IT-5G"', 'detailAddress': '', 'deviceLanguage': 'zh', 'deviceMac': 'D0:D2:C4:2F:54:3D', 'deviceModel': 'OPPO#CPH1825', 'deviceSerial': 'PR7TQS9SPZY5IN5T', 'deviceSoftwareVersion': '11', 'deviceVersionType': 'user', 'displayMetrics': '1080,2196', 'fingerPrint': 'OPPO/CPH1825/CPH1825:8.1.0/O11019/1539160089:user/release-keys', 'gaid': 'null', 'hardware': 'mt6771', 'imei': '354310678254322', 'imsi': '452050408783768', 'inDoor': -1, 'lag': '', 'lng': '', 'locationAddress': '', 'locationCity': '', 'mobileName': 'OPPO F9 Pro', 'model': 'OPPO#CPH1825', 'networkOperator': '', 'networkOperatorName': '', 'networkType': 'wifi', 'operatorName': '中国移动,无服务', 'os': '8.1.0', 'phoneAvailableRam': ' 3.4562GB', 'phoneCardNum': '', 'phoneOs': 'Android', 'phoneTotalRam': 'MemTotal:        5850108 kB', 'phonecardCount': 2, 'product': 'CPH1825', 'radioVersion': 'M_V3_P10,M_V3_P10', 'resolutionHeight': '2196', 'resolutionWidth': '1080', 'rooted': 0, 'routerMac': 'f4:a4:d6:56:f9:94', 'runtimeAvailableMemory': ' 0.3583GB', 'runtimeMaxMemory': ' 0.3750GB', 'simState': 1, 'simulator': 0, 'timeZone': 'GMT+08:00', 'totalStorage': ' 50.1089GB', 'turnOnTime': '2022-10-18 09:33:08', 'uuid': 'ba8a3ffc973faaea0009ef8aaf2f55fe4b271152a89d93aa36616ae1dbcf4ae0', 'uuidOriginal': '[-70, -118, 63, -4, -105, 63, -86, -22, 0, 9, -17, -118, -81, 47, 85, -2, 75, 39, 17, 82, -88, -99, -109, -86, 54, 97, 106, -31, -37, -49, 74, -32]'},
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '88aebd155f292e1d', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 10:19:18,905] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:19:18,906] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:19:19,004] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': 'df1cfff77029ba0a', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 10:19:19,004] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:19:19,005] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:19:19,249] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '7d4b8ec93edb60d5', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 10:19:19,249] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:19:19,250] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:19:19,384] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：c4e3e6b180d6ffc9
+[2022-11-17 10:19:19,386] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：c4e3e6b180d6ffc9
+[2022-11-17 10:19:19,391] - logger_.py] - ERROR: 当前请求的错误: '成功' != '通讯录不能为空'
+- 成功
++ 通讯录不能为空
+
+[2022-11-17 10:19:19,394] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:28:25,291] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:28:25,312] - logger_.py] - DEBUG: 
+当前请求接口是: 存储注册时的设备信息(注册成功后调首页登录)saveDeviceInfo,
+请求参数: {'adbEnabled': 0, 'androidId': 'b109171b35c94873', 'availableStorage': ' 37.3796GB', 'battery': '81', 'codeName': 'REL', 'cpu': 'arm64-v8a', 'cpuInfo': ' ', 'cpuSpeed': '1989000KHz', 'currentWifi': '"HAI-IT-5G"', 'detailAddress': '', 'deviceLanguage': 'zh', 'deviceMac': 'D0:D2:C4:2F:54:3D', 'deviceModel': 'OPPO#CPH1825', 'deviceSerial': 'PR7TQS9SPZY5IN5T', 'deviceSoftwareVersion': '11', 'deviceVersionType': 'user', 'displayMetrics': '1080,2196', 'fingerPrint': 'OPPO/CPH1825/CPH1825:8.1.0/O11019/1539160089:user/release-keys', 'gaid': 'null', 'hardware': 'mt6771', 'imei': '354310678254322', 'imsi': '452050408783768', 'inDoor': -1, 'lag': '', 'lng': '', 'locationAddress': '', 'locationCity': '', 'mobileName': 'OPPO F9 Pro', 'model': 'OPPO#CPH1825', 'networkOperator': '', 'networkOperatorName': '', 'networkType': 'wifi', 'operatorName': '中国移动,无服务', 'os': '8.1.0', 'phoneAvailableRam': ' 3.4562GB', 'phoneCardNum': '', 'phoneOs': 'Android', 'phoneTotalRam': 'MemTotal:        5850108 kB', 'phonecardCount': 2, 'product': 'CPH1825', 'radioVersion': 'M_V3_P10,M_V3_P10', 'resolutionHeight': '2196', 'resolutionWidth': '1080', 'rooted': 0, 'routerMac': 'f4:a4:d6:56:f9:94', 'runtimeAvailableMemory': ' 0.3583GB', 'runtimeMaxMemory': ' 0.3750GB', 'simState': 1, 'simulator': 0, 'timeZone': 'GMT+08:00', 'totalStorage': ' 50.1089GB', 'turnOnTime': '2022-10-18 09:33:08', 'uuid': 'ba8a3ffc973faaea0009ef8aaf2f55fe4b271152a89d93aa36616ae1dbcf4ae0', 'uuidOriginal': '[-70, -118, 63, -4, -105, 63, -86, -22, 0, 9, -17, -118, -81, 47, 85, -2, 75, 39, 17, 82, -88, -99, -109, -86, 54, 97, 106, -31, -37, -49, 74, -32]'},
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '2275097012c08577', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 10:28:25,314] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:28:25,315] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:28:25,369] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': 'a1c65f59bdd60eac', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 10:28:25,370] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:28:25,371] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:28:25,477] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': 'f724398eb1ff3674', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 10:28:25,477] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 10:28:25,478] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 10:28:25,539] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：d71e7712e1bfa00b
+[2022-11-17 10:28:25,539] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：d71e7712e1bfa00b
+[2022-11-17 10:28:25,540] - logger_.py] - ERROR: 当前请求的错误: '成功' != '通讯录不能为空'
+- 成功
++ 通讯录不能为空
+
+[2022-11-17 10:28:25,541] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 12:27:53,789] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 12:27:53,805] - logger_.py] - DEBUG: 
+当前请求接口是: 存储注册时的设备信息(注册成功后调首页登录)saveDeviceInfo,
+请求参数: {'adbEnabled': 0, 'androidId': 'b109171b35c94873', 'availableStorage': ' 37.3796GB', 'battery': '81', 'codeName': 'REL', 'cpu': 'arm64-v8a', 'cpuInfo': ' ', 'cpuSpeed': '1989000KHz', 'currentWifi': '"HAI-IT-5G"', 'detailAddress': '', 'deviceLanguage': 'zh', 'deviceMac': 'D0:D2:C4:2F:54:3D', 'deviceModel': 'OPPO#CPH1825', 'deviceSerial': 'PR7TQS9SPZY5IN5T', 'deviceSoftwareVersion': '11', 'deviceVersionType': 'user', 'displayMetrics': '1080,2196', 'fingerPrint': 'OPPO/CPH1825/CPH1825:8.1.0/O11019/1539160089:user/release-keys', 'gaid': 'null', 'hardware': 'mt6771', 'imei': '354310678254322', 'imsi': '452050408783768', 'inDoor': -1, 'lag': '', 'lng': '', 'locationAddress': '', 'locationCity': '', 'mobileName': 'OPPO F9 Pro', 'model': 'OPPO#CPH1825', 'networkOperator': '', 'networkOperatorName': '', 'networkType': 'wifi', 'operatorName': '中国移动,无服务', 'os': '8.1.0', 'phoneAvailableRam': ' 3.4562GB', 'phoneCardNum': '', 'phoneOs': 'Android', 'phoneTotalRam': 'MemTotal:        5850108 kB', 'phonecardCount': 2, 'product': 'CPH1825', 'radioVersion': 'M_V3_P10,M_V3_P10', 'resolutionHeight': '2196', 'resolutionWidth': '1080', 'rooted': 0, 'routerMac': 'f4:a4:d6:56:f9:94', 'runtimeAvailableMemory': ' 0.3583GB', 'runtimeMaxMemory': ' 0.3750GB', 'simState': 1, 'simulator': 0, 'timeZone': 'GMT+08:00', 'totalStorage': ' 50.1089GB', 'turnOnTime': '2022-10-18 09:33:08', 'uuid': 'ba8a3ffc973faaea0009ef8aaf2f55fe4b271152a89d93aa36616ae1dbcf4ae0', 'uuidOriginal': '[-70, -118, 63, -4, -105, 63, -86, -22, 0, 9, -17, -118, -81, 47, 85, -2, 75, 39, 17, 82, -88, -99, -109, -86, 54, 97, 106, -31, -37, -49, 74, -32]'},
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '6a1f84c254d8e5a8', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 12:27:53,806] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 12:27:53,807] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 12:27:53,908] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '701fda508bd362be', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 12:27:53,909] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 12:27:53,910] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 12:27:54,044] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '1a19cd61fd676e3b', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 12:27:54,045] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 12:27:54,046] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 12:27:54,149] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：1d58612d0c5019f5
+[2022-11-17 12:27:54,152] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：1d58612d0c5019f5
+[2022-11-17 12:27:54,157] - logger_.py] - ERROR: 当前请求的错误: '成功' != '通讯录不能为空'
+- 成功
++ 通讯录不能为空
+
+[2022-11-17 12:27:54,161] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 14:07:38,606] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 14:07:38,640] - logger_.py] - DEBUG: 
+当前请求接口是: 存储注册时的设备信息(注册成功后调首页登录)saveDeviceInfo,
+请求参数: {'adbEnabled': 0, 'androidId': 'b109171b35c94873', 'availableStorage': ' 37.3796GB', 'battery': '81', 'codeName': 'REL', 'cpu': 'arm64-v8a', 'cpuInfo': ' ', 'cpuSpeed': '1989000KHz', 'currentWifi': '"HAI-IT-5G"', 'detailAddress': '', 'deviceLanguage': 'zh', 'deviceMac': 'D0:D2:C4:2F:54:3D', 'deviceModel': 'OPPO#CPH1825', 'deviceSerial': 'PR7TQS9SPZY5IN5T', 'deviceSoftwareVersion': '11', 'deviceVersionType': 'user', 'displayMetrics': '1080,2196', 'fingerPrint': 'OPPO/CPH1825/CPH1825:8.1.0/O11019/1539160089:user/release-keys', 'gaid': 'null', 'hardware': 'mt6771', 'imei': '354310678254322', 'imsi': '452050408783768', 'inDoor': -1, 'lag': '', 'lng': '', 'locationAddress': '', 'locationCity': '', 'mobileName': 'OPPO F9 Pro', 'model': 'OPPO#CPH1825', 'networkOperator': '', 'networkOperatorName': '', 'networkType': 'wifi', 'operatorName': '中国移动,无服务', 'os': '8.1.0', 'phoneAvailableRam': ' 3.4562GB', 'phoneCardNum': '', 'phoneOs': 'Android', 'phoneTotalRam': 'MemTotal:        5850108 kB', 'phonecardCount': 2, 'product': 'CPH1825', 'radioVersion': 'M_V3_P10,M_V3_P10', 'resolutionHeight': '2196', 'resolutionWidth': '1080', 'rooted': 0, 'routerMac': 'f4:a4:d6:56:f9:94', 'runtimeAvailableMemory': ' 0.3583GB', 'runtimeMaxMemory': ' 0.3750GB', 'simState': 1, 'simulator': 0, 'timeZone': 'GMT+08:00', 'totalStorage': ' 50.1089GB', 'turnOnTime': '2022-10-18 09:33:08', 'uuid': 'ba8a3ffc973faaea0009ef8aaf2f55fe4b271152a89d93aa36616ae1dbcf4ae0', 'uuidOriginal': '[-70, -118, 63, -4, -105, 63, -86, -22, 0, 9, -17, -118, -81, 47, 85, -2, 75, 39, 17, 82, -88, -99, -109, -86, 54, 97, 106, -31, -37, -49, 74, -32]'},
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': 'de6d04c0dcd0d093', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 14:07:38,641] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 14:07:38,641] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 14:07:38,682] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': 'ebd1d2e69a52c93c', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 14:07:38,683] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 14:07:38,684] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 14:07:38,780] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '023aa0726b1a5d0f', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 14:07:38,781] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 14:07:38,782] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 14:07:38,876] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：eeedde4c55b06317
+[2022-11-17 14:07:38,877] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：eeedde4c55b06317
+[2022-11-17 14:07:38,878] - logger_.py] - ERROR: 当前请求的错误: '成功' != '通讯录不能为空'
+- 成功
++ 通讯录不能为空
+
+[2022-11-17 14:07:38,879] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 14:49:13,927] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 14:49:13,951] - logger_.py] - DEBUG: 
+当前请求接口是: 存储注册时的设备信息(注册成功后调首页登录)saveDeviceInfo,
+请求参数: {'adbEnabled': 0, 'androidId': 'b109171b35c94873', 'availableStorage': ' 37.3796GB', 'battery': '81', 'codeName': 'REL', 'cpu': 'arm64-v8a', 'cpuInfo': ' ', 'cpuSpeed': '1989000KHz', 'currentWifi': '"HAI-IT-5G"', 'detailAddress': '', 'deviceLanguage': 'zh', 'deviceMac': 'D0:D2:C4:2F:54:3D', 'deviceModel': 'OPPO#CPH1825', 'deviceSerial': 'PR7TQS9SPZY5IN5T', 'deviceSoftwareVersion': '11', 'deviceVersionType': 'user', 'displayMetrics': '1080,2196', 'fingerPrint': 'OPPO/CPH1825/CPH1825:8.1.0/O11019/1539160089:user/release-keys', 'gaid': 'null', 'hardware': 'mt6771', 'imei': '354310678254322', 'imsi': '452050408783768', 'inDoor': -1, 'lag': '', 'lng': '', 'locationAddress': '', 'locationCity': '', 'mobileName': 'OPPO F9 Pro', 'model': 'OPPO#CPH1825', 'networkOperator': '', 'networkOperatorName': '', 'networkType': 'wifi', 'operatorName': '中国移动,无服务', 'os': '8.1.0', 'phoneAvailableRam': ' 3.4562GB', 'phoneCardNum': '', 'phoneOs': 'Android', 'phoneTotalRam': 'MemTotal:        5850108 kB', 'phonecardCount': 2, 'product': 'CPH1825', 'radioVersion': 'M_V3_P10,M_V3_P10', 'resolutionHeight': '2196', 'resolutionWidth': '1080', 'rooted': 0, 'routerMac': 'f4:a4:d6:56:f9:94', 'runtimeAvailableMemory': ' 0.3583GB', 'runtimeMaxMemory': ' 0.3750GB', 'simState': 1, 'simulator': 0, 'timeZone': 'GMT+08:00', 'totalStorage': ' 50.1089GB', 'turnOnTime': '2022-10-18 09:33:08', 'uuid': 'ba8a3ffc973faaea0009ef8aaf2f55fe4b271152a89d93aa36616ae1dbcf4ae0', 'uuidOriginal': '[-70, -118, 63, -4, -105, 63, -86, -22, 0, 9, -17, -118, -81, 47, 85, -2, 75, 39, 17, 82, -88, -99, -109, -86, 54, 97, 106, -31, -37, -49, 74, -32]'},
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': 'a6b992cbbe685179', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 14:49:13,952] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 14:49:13,953] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 14:49:14,010] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': 'b100d9f5ec00bf12', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 14:49:14,011] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 14:49:14,011] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 14:49:14,126] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': 'ab172f361088decb', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 14:49:14,127] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 14:49:14,128] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 14:49:14,204] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：61773017e623ccf7
+[2022-11-17 14:49:14,204] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：61773017e623ccf7
+[2022-11-17 14:49:14,205] - logger_.py] - ERROR: 当前请求的错误: '成功' != '通讯录不能为空'
+- 成功
++ 通讯录不能为空
+
+[2022-11-17 14:49:14,206] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 17:52:21,996] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 17:52:22,025] - logger_.py] - DEBUG: 
+当前请求接口是: 存储注册时的设备信息(注册成功后调首页登录)saveDeviceInfo,
+请求参数: {'adbEnabled': 0, 'androidId': 'b109171b35c94873', 'availableStorage': ' 37.3796GB', 'battery': '81', 'codeName': 'REL', 'cpu': 'arm64-v8a', 'cpuInfo': ' ', 'cpuSpeed': '1989000KHz', 'currentWifi': '"HAI-IT-5G"', 'detailAddress': '', 'deviceLanguage': 'zh', 'deviceMac': 'D0:D2:C4:2F:54:3D', 'deviceModel': 'OPPO#CPH1825', 'deviceSerial': 'PR7TQS9SPZY5IN5T', 'deviceSoftwareVersion': '11', 'deviceVersionType': 'user', 'displayMetrics': '1080,2196', 'fingerPrint': 'OPPO/CPH1825/CPH1825:8.1.0/O11019/1539160089:user/release-keys', 'gaid': 'null', 'hardware': 'mt6771', 'imei': '354310678254322', 'imsi': '452050408783768', 'inDoor': -1, 'lag': '', 'lng': '', 'locationAddress': '', 'locationCity': '', 'mobileName': 'OPPO F9 Pro', 'model': 'OPPO#CPH1825', 'networkOperator': '', 'networkOperatorName': '', 'networkType': 'wifi', 'operatorName': '中国移动,无服务', 'os': '8.1.0', 'phoneAvailableRam': ' 3.4562GB', 'phoneCardNum': '', 'phoneOs': 'Android', 'phoneTotalRam': 'MemTotal:        5850108 kB', 'phonecardCount': 2, 'product': 'CPH1825', 'radioVersion': 'M_V3_P10,M_V3_P10', 'resolutionHeight': '2196', 'resolutionWidth': '1080', 'rooted': 0, 'routerMac': 'f4:a4:d6:56:f9:94', 'runtimeAvailableMemory': ' 0.3583GB', 'runtimeMaxMemory': ' 0.3750GB', 'simState': 1, 'simulator': 0, 'timeZone': 'GMT+08:00', 'totalStorage': ' 50.1089GB', 'turnOnTime': '2022-10-18 09:33:08', 'uuid': 'ba8a3ffc973faaea0009ef8aaf2f55fe4b271152a89d93aa36616ae1dbcf4ae0', 'uuidOriginal': '[-70, -118, 63, -4, -105, 63, -86, -22, 0, 9, -17, -118, -81, 47, 85, -2, 75, 39, 17, 82, -88, -99, -109, -86, 54, 97, 106, -31, -37, -49, 74, -32]'},
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '20b83ea2893ef4ca', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 17:52:22,026] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 17:52:22,027] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 17:52:22,159] - logger_.py] - DEBUG: 
+当前请求接口是: 上传通讯录:AddressBook,
+请求参数: [{'contactName': 'Licenciado', 'contactPhone': '+52 449 480 7440', 'contactRelation': '', 'lastTime': '1661998796390'}, {'contactName': '1422firstcash', 'contactPhone': '+52 449 482 0252', 'contactRelation': '', 'lastTime': '1661998844242'}, {'contactName': 'Vicente Ortiz', 'contactPhone': '+52 449 496 9413', 'contactRelation': '', 'lastTime': '1661998880584'}, {'contactName': 'Orestamo', 'contactPhone': '+52 449 507 7179', 'contactRelation': '', 'lastTime': '1661999049347'}, {'contactName': 'Aquella', 'contactPhone': '+52 449 512 8518', 'contactRelation': '', 'lastTime': '1661999077020'}, {'contactName': 'Cash', 'contactPhone': '+52 449 514 7208', 'contactRelation': '', 'lastTime': '1661999122287'}],
+请求结果{'code': 0, 'msg': '成功', 'data': None, 'traceId': '3b6f1a7ce60ac5d8', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 17:52:22,160] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 17:52:22,160] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 17:52:22,269] - logger_.py] - DEBUG: 
+当前请求接口是: 查询最大可借天数：queryAvailableProduct,
+请求参数: {'dayRate': '0.77', 'expectedInstallment': '0', 'isNew': '1', 'merchantNo': '01', 'orgNo': 'MEX', 'prductPayAmountMax': '1300', 'prductPayAmountMin': '300', 'productAmount': '0', 'productFastPayTime': '50', 'productIntroduce': 'testhhh', 'productLoanTerm': '1', 'productName': 'Préstamos seguros', 'productNo': '', 'productPictureUrl': '/upload/image/20220803/2022080301312987180381.png', 'productTerm': '0', 'showPeriod': '0', 'userExpectedAmount': '0', 'userExpectedTerm': '0'},
+请求结果{'code': 0, 'msg': '成功', 'data': [{'maxLoanAmount': 750.0, 'loanDay': 10, 'installmentNum': 1, 'fistInstallmentDays': 10, 'productNo': 'MEX_01_1_20220927173142'}], 'traceId': '8df7b5b63eb63038', 'paginNation': {'total': 0, 'pageNo': 0, 'pageSize': 0, 'pages': 0}, 'success': True}
+[2022-11-17 17:52:22,270] - logger_.py] - DEBUG: ================================结束================================
+
+[2022-11-17 17:52:22,271] - logger_.py] - DEBUG: ================================开始================================
+[2022-11-17 17:52:22,432] - logger_.py] - DEBUG: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：e48d41d4a04baa4a
+[2022-11-17 17:52:22,434] - logger_.py] - INFO: 当前接口：提交借款申请：submitOneProduct,响应结果通讯录不能为空,错误id：e48d41d4a04baa4a
+[2022-11-17 17:52:22,439] - logger_.py] - ERROR: 当前请求的错误: '成功' != '通讯录不能为空'
+- 成功
++ 通讯录不能为空
+
+[2022-11-17 17:52:22,443] - logger_.py] - DEBUG: ================================结束================================
+
