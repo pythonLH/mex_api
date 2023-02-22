@@ -57,6 +57,5 @@ class login(object):
 
 
 if __name__ == '__main__':
-    print((str(random.randint(1, 10)) + ''.join(str(random.choice(range(1, 10))) for _ in range(1, 10))))
-    login = login().login()
-    print(login)
+    pass
+   

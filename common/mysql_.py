@@ -47,10 +47,4 @@ class MysqlUtil:
 
 
 if __name__ == '__main__':
-    sql = "SELECT * FROM `mp-asset`.`t_asset`  order by  id desc limit 2;"
-    code = []
-    mysql_util = MysqlUtil()
-    results = mysql_util.fetch_all(sql)
-    for co in results:
-        code.append(co['code'])
-    print(code)
+    pass

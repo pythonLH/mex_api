@@ -164,9 +164,9 @@ class Template_mixin(object):
     2: '错误',
     }
 
-    DEFAULT_TITLE = '1219单元测试报告'
+    DEFAULT_TITLE = '接口测试报告'
     DEFAULT_DESCRIPTION = ''
-    DEFAULT_TESTER='华华'
+    DEFAULT_TESTER='墨西哥'
 
     # ------------------------------------------------------------------------
     # HTML Template

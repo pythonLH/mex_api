@@ -51,25 +51,4 @@ class Request:
 
 
 if __name__ == '__main__':
-    url = "/hc/app/noAuth/logon/doRegister"
-    data = {
-        "promotionChannels": "googlePlay",
-        "password": "",
-        "flag": "01",
-        "phone": "2221593587",
-        "countryCode": "52",
-        "shortNo": "9999"
-    }
-
-    headers = {
-        'app-name': 'Hinance',
-        'app-version': '1.0.7',
-        'channel': 'googlePlay',
-        'commercialId': "1",
-        'lang': 'zh',
-        'organizationId': 'DCMEX',
-        'token': '',
-        'Content-Type': 'application/json'
-    }
-    t = Request('post', url_=url, body_=json.dumps(data), headers_=headers, cookies=None)
-    print(t.get_json())
+    pass
