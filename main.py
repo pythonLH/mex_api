@@ -1,6 +1,6 @@
 import unittest
 import HTMLTestRunnerNew
-from common.ptah_object._path import case_dir, report_html
+from common.ptah_object.OsPath import case_dir, report_html
 
 '''加载用例方式：
 1、unittest.main()直接加载用例并执行

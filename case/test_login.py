@@ -1,11 +1,11 @@
 import unittest
 import json
-from common.request_ import Request
-from common.logger_ import Log
+from common.RequestHttp import Request
+from common.WriteLogger import Log
 from ddt import ddt, data
-from common.login_ import login
-from common.redConfig import red_
-from common.ptah_object._path import Basfig_path
+from common.login import login
+from common.RedConfig import red_
+from common.ptah_object import OsPath
 
 
 @ddt
@@ -550,7 +550,7 @@ class Login(unittest.TestCase):
             'commercialId': '1',
             'lang': 'zh',
             'organizationId': 'DCMEX',
-            'token': red_(Basfig_path).red_get('token', 'token_'),
+            'token': red_(OsPath.Basfig_path).red_get('token', 'token_'),
             'Content-Type': 'application/json'
         }
 
@@ -587,5 +587,3 @@ class Login(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-

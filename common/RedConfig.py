@@ -1,13 +1,13 @@
 import configparser
 import os
-from common.ptah_object._path import Basfig_path
+from common.ptah_object.OsPath import Basfig_path
 
-# item_dir = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
-# if not os.path.exists(item_dir + r'\config'):
-#     os.mkdir(item_dir + r'\config')
-# else:
-#     pass
-#     # print("文件路径存在: %s" % item_dir + r'\config')
+item_dir = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
+if not os.path.exists(item_dir + r'\config'):
+    os.mkdir(item_dir + r'\config')
+else:
+    pass
+    # print("文件路径存在: %s" % item_dir + r'\config')
 
 
 class red_(object):
@@ -57,11 +57,3 @@ class red_(object):
 
 if __name__ == '__main__':
     pass
-    # path = r"D:\test01\config\BasicConfigUration.ini"
-    # t = red_(r"D:\test01\config\BasicConfigUration.ini", "utf-8").red_get('loans_app', 'url')
-    # print(t)
-    #
-    # red_(path).write_data('host_ip', 'url_215', 'http://192.168.122.215:9010')
-    # red_(path).write_data('token', 'url_233', 'http://192.168.122.233:9010')
-    # t = red_(Basfig_path).red_get('headers', 'login_header')
-    # print(t)

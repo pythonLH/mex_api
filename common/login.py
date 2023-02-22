@@ -1,9 +1,9 @@
 import json
 import random
-from common.request_ import Request
-from common.ptah_object._path import Basfig_path
-from common.redConfig import red_
-from common.logger_ import Log
+from common.RequestHttp import Request
+from common.ptah_object.OsPath import Basfig_path
+from common.RedConfig import red_
+from common.WriteLogger import Log
 
 url = red_(Basfig_path).red_get('register', 'register_url')
 register = eval(red_(Basfig_path).red_get('register', 'register_'))
