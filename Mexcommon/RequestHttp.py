@@ -1,8 +1,8 @@
 import requests
 import json
-from common.WriteLogger import Log
-from common.ptah_object.OsPath import Basfig_path
-from common.RedConfig import red_
+from Mexcommon.WriteLogger import Log
+from Mexcommon.ptah_object.OsPath import Basfig_path
+from Mexcommon.RedConfig import red_
 """Requests封装类
 实现只需调用一个方法，来支持完成多种请求方式（get,post,delete....）的请求"""
 

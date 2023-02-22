@@ -1,11 +1,11 @@
 import unittest
 import json
-from common.RequestHttp import Request
-from common.WriteLogger import Log
+from Mexcommon.RequestHttp import Request
+from Mexcommon.WriteLogger import Log
 from ddt import ddt, data
-from common.login import login
-from common.RedConfig import red_
-from common.ptah_object import OsPath
+from Mexcommon.login import login
+from Mexcommon.RedConfig import red_
+from Mexcommon.ptah_object import OsPath
 
 
 @ddt

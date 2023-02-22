@@ -1,6 +1,6 @@
 import configparser
 import os
-from common.ptah_object.OsPath import Basfig_path
+from Mexcommon.ptah_object.OsPath import Basfig_path
 
 item_dir = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
 if not os.path.exists(item_dir + r'\config'):

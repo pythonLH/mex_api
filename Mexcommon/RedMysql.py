@@ -1,7 +1,7 @@
 import pymysql
 import configparser
-from common.ptah_object import OsPath
-from common.RedConfig import red_
+from Mexcommon.ptah_object import OsPath
+from Mexcommon.RedConfig import red_
 
 
 
