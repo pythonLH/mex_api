@@ -1,4 +1,7 @@
 import pytest
+import sys
+
+sys.path.append('../')
 import json
 from common.request_ import Request
 from common.ptah_object.Path_ import Basfig_path
