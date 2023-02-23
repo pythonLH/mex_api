@@ -1,8 +1,6 @@
 import pymysql
-import configparser
-from Mexcommon.ptah_object import OsPath
-from Mexcommon.RedConfig import red_
-
+import ptah_object.Path_
+from common.redconfig import red_
 
 
 # 用来查询sql的
@@ -10,18 +8,17 @@ from Mexcommon.RedConfig import red_
 class MysqlUtil:
 
     def __init__(self):
-        conf = configparser.ConfigParser()
-        conf.read(_path, encoding='utf-8')
-        host = conf.get('mysql', 'host')
-        port = conf.getint('mysql', 'port')
-        user = conf.get('mysql', 'user')
-        password = conf.get('mysql', 'password')
-        database = conf.get('mysql', 'database')
+        # 初始化时读取数据库连接配置，没传入database名字
+        conf = red_(ptah_object.Path_.database_dir, encoding='utf-8')
+        host = conf.red_get('db_mysql', 'host')
+        port = conf.red_int('db_mysql', 'port')
+        user = conf.red_get('db_mysql', 'user')
+        password = conf.red_get('db_mysql', 'password')
+
         try:
             self.mysql = pymysql.connect(host=host,
                                          user=user,
                                          password=password,
-                                         database=database,
                                          port=port,
                                          cursorclass=pymysql.cursors.DictCursor)
 
@@ -29,12 +26,12 @@ class MysqlUtil:
             print("数据库连接错误:{}".format(e))
             raise e
 
-    def fetch_one(self, sql):
+    def fetch_one(self, sql_):
         cursor = self.mysql.cursor()
-        cursor.execute(sql)
+        cursor.execute(sql_)
         return cursor.fetchone()
 
-    def fetch_all(self, sql):
+    def fetch_all(self):
         cursor = self.mysql.cursor()
         cursor.execute(sql)
         return cursor.fetchall()
@@ -47,4 +44,5 @@ class MysqlUtil:
 
 
 if __name__ == '__main__':
-    pass
+    sql = "SELECT * FROM `hc_app_per`.`app_user` WHERE `phone` LIKE '%466464664%' LIMIT 0,1000;"
+    print(MysqlUtil().fetch_one(sql))

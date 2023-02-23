@@ -1,9 +1,9 @@
 import json
 import random
-from Mexcommon.RequestHttp import Request
-from Mexcommon.ptah_object.OsPath import Basfig_path
-from Mexcommon.RedConfig import red_
-from Mexcommon.WriteLogger import Log
+from common.request_ import Request
+from common.ptah_object.Path_ import Basfig_path
+from common.redconfig import red_
+from common.logger_ import Log
 
 url = red_(Basfig_path).red_get('register', 'register_url')
 register = eval(red_(Basfig_path).red_get('register', 'register_'))
@@ -57,5 +57,6 @@ class login(object):
 
 
 if __name__ == '__main__':
-    pass
-   
+    print((str(random.randint(1, 10)) + ''.join(str(random.choice(range(1, 10))) for _ in range(1, 10))))
+    login = login().login()
+    print(login)

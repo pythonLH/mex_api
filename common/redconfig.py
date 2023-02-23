@@ -1,25 +1,29 @@
 import configparser
 import os
-from Mexcommon.ptah_object.OsPath import Basfig_path
+from common.ptah_object.Path_ import database_dir
 
+# 没有配置路径，就创建
 item_dir = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
 if not os.path.exists(item_dir + r'\config'):
     os.mkdir(item_dir + r'\config')
 else:
     pass
-    # print("文件路径存在: %s" % item_dir + r'\config')
 
 
 class red_(object):
     # 初始化库
-    def __init__(self, filename_, encoding='utf-8'):
+    def __init__(self, filename_, encoding: object = 'utf-8'):
+        """
+
+        :rtype: object
+        """
         self.filename_ = filename_
         self.encoding_ = encoding
         self.conf_ = configparser.ConfigParser()
 
         if os.path.exists(filename_):
             try:
-                self.red_conf = self.conf_.read(self.filename_, encoding=encoding)
+                self.red_conf = self.conf_.read(self.filename_)
             except Exception as e:
                 raise print("加载配置文件出错：%s" % e)
         else:
@@ -56,4 +60,17 @@ class red_(object):
 
 
 if __name__ == '__main__':
-    pass
+    path = r"D:\test01\config\BasicConfigUration.ini"
+    t = red_(r"D:\pytest_test\config\BasicConfigUration.ini", "utf-8").red_get('token', 'token_')
+    print(t)
+    #
+    # red_(path).write_data('host_ip', 'url_215', 'http://192.168.122.215:9010')
+    # red_(path).write_data('token', 'url_233', 'http://192.168.122.233:9010')
+
+    # conf = red_(database_dir, encoding='utf-8')
+    # host = conf.red_get('db_mysql', 'host')
+    # port = conf.red_int('db_mysql', 'port')
+    # user = conf.red_get('db_mysql', 'user')
+    # password = conf.red_get('db_mysql', 'password')
+    # database = conf.red_get('db_mysql', 'database')
+    # print(host, port, user, password, database)
