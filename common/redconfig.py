@@ -60,17 +60,18 @@ class red_(object):
 
 
 if __name__ == '__main__':
-    path = r"D:\test01\config\BasicConfigUration.ini"
-    t = red_(r"D:\pytest_test\config\BasicConfigUration.ini", "utf-8").red_get('token', 'token_')
-    print(t)
+    pass
+    # path = r"D:\test01\config\BasicConfigUration.ini"
+    # t = red_(r"D:\pytest_test\config\BasicConfigUration.ini", "utf-8").red_get('token', 'token_')
+    # print(t)
+    # #
+    # # red_(path).write_data('host_ip', 'url_215', 'http://192.168.122.215:9010')
+    # # red_(path).write_data('token', 'url_233', 'http://192.168.122.233:9010')
     #
-    # red_(path).write_data('host_ip', 'url_215', 'http://192.168.122.215:9010')
-    # red_(path).write_data('token', 'url_233', 'http://192.168.122.233:9010')
-
-    # conf = red_(database_dir, encoding='utf-8')
-    # host = conf.red_get('db_mysql', 'host')
-    # port = conf.red_int('db_mysql', 'port')
-    # user = conf.red_get('db_mysql', 'user')
-    # password = conf.red_get('db_mysql', 'password')
-    # database = conf.red_get('db_mysql', 'database')
-    # print(host, port, user, password, database)
+    # # conf = red_(database_dir, encoding='utf-8')
+    # # host = conf.red_get('db_mysql', 'host')
+    # # port = conf.red_int('db_mysql', 'port')
+    # # user = conf.red_get('db_mysql', 'user')
+    # # password = conf.red_get('db_mysql', 'password')
+    # # database = conf.red_get('db_mysql', 'database')
+    # # print(host, port, user, password, database)

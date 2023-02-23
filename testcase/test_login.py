@@ -577,4 +577,4 @@ class Test_login:
 
 
 if __name__ == '__main__':
-    pytest.main()
+    pass

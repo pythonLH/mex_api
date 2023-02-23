@@ -44,5 +44,6 @@ class MysqlUtil:
 
 
 if __name__ == '__main__':
-    sql = "SELECT * FROM `hc_app_per`.`app_user` WHERE `phone` LIKE '%466464664%' LIMIT 0,1000;"
-    print(MysqlUtil().fetch_one(sql))
+    pass
+    # sql = "SELECT * FROM `hc_app_per`.`app_user` WHERE `phone` LIKE '%466464664%' LIMIT 0,1000;"
+    # print(MysqlUtil().fetch_one(sql))
