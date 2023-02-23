@@ -3,12 +3,12 @@ import json
 from common.request_ import Request
 from common.ptah_object.Path_ import Basfig_path
 from common.redconfig import red_
-from common.login_ import login
+from common import login_
 
 
 class Test_login:
     # 初始化登录
-    login().login()
+    login_.login().login()
     # 期望结果的定义
     expected_outcome = '成功'
     # 更新一个header
