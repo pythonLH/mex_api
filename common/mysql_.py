@@ -31,9 +31,9 @@ class MysqlUtil:
         cursor.execute(sql_)
         return cursor.fetchone()
 
-    def fetch_all(self):
+    def fetch_all(self, sql_):
         cursor = self.mysql.cursor()
-        cursor.execute(sql)
+        cursor.execute(sql_)
         return cursor.fetchall()
 
     def commit(self):
