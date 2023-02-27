@@ -59,9 +59,10 @@ class red_(object):
 
 
 if __name__ == '__main__':
+    pass
 
     path = r"D:\test01\config\BasicConfigUration.ini"
-    t = red_(r"D:\pytest_test\testcase\BasicConfigUration.ini", "utf-8").red_get('register', 'register_')
+    t = red_(r"D:\pytest_test\testcase\BasicConfigUration.ini", "utf-8").red_get('token', 'token_')
     print(t)
     # #
     # # red_(path).write_data('host_ip', 'url_215', 'http://192.168.122.215:9010')

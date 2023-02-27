@@ -17,7 +17,7 @@ class Test_login:
         'commercialId': "1",
         'lang': 'zh',
         'organizationId': 'DCMEX',
-        'token': red_(Basfig_path).red_get('token', 'token_'),
+        'token': 'f81dbb1c12f24ef5222876db43f078a0',
         'Content-Type': 'application/json'
     }
 

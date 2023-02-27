@@ -10,3 +10,4 @@ report_dir = _dir + r'\repos'
 report_html = report_dir + r'Into_an_interface.html'
 # 配置文件路径
 Basfig_path = item_dir + r'\testcase\BasicConfigUration.ini'
+print(Basfig_path)
