@@ -1,8 +1,7 @@
 import requests
-import json
 from common.logger_ import Log
 from common.ptah_object.Path_ import Basfig_path
-from common.redconfig import red_
+from testcase.redconfig import red_
 """Requests封装类
 实现只需调用一个方法，来支持完成多种请求方式（get,post,delete....）的请求"""
 

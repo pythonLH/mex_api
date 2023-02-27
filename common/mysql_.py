@@ -1,6 +1,6 @@
 import pymysql
 import ptah_object.Path_
-from common.redconfig import red_
+from testcase.redconfig import red_
 
 
 # 用来查询sql的

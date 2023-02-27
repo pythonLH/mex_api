@@ -1,13 +1,8 @@
-import sys
-import os
-curPath = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(curPath)[0]
-sys.path.append(rootPath)
 import json
 from common.request_ import Request
 from common.ptah_object.Path_ import Basfig_path
-from common.redconfig import red_
-from common.login_ import login
+from testcase.redconfig import red_
+from testcase.login_ import login
 
 
 class Test_login:
