@@ -1,6 +1,5 @@
 import configparser
 import os
-from common.ptah_object.Path_ import database_dir
 
 # 没有配置路径，就创建
 item_dir = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]

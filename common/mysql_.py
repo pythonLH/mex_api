@@ -1,5 +1,5 @@
 import pymysql
-import ptah_object.Path_
+import testcase.Path_
 from testcase.redconfig import red_
 
 
@@ -9,7 +9,7 @@ class MysqlUtil:
 
     def __init__(self):
         # 初始化时读取数据库连接配置，没传入database名字
-        conf = red_(ptah_object.Path_.database_dir, encoding='utf-8')
+        conf = red_(testcase.Path_.database_dir, encoding='utf-8')
         host = conf.red_get('db_mysql', 'host')
         port = conf.red_int('db_mysql', 'port')
         user = conf.red_get('db_mysql', 'user')

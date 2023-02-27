@@ -1,6 +1,6 @@
 import json
-from common.request_ import Request
-from common.ptah_object.Path_ import Basfig_path
+from testcase.request_ import Request
+from testcase.Path_ import Basfig_path
 from testcase.redconfig import red_
 from testcase.login_ import login
 
