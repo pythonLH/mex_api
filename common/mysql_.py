@@ -1,5 +1,5 @@
 import pymysql
-import testcase.Path_
+import testcase.Pathtest
 from testcase.redconfig import red_
 
 
