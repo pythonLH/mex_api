@@ -1,8 +1,8 @@
-import pytest
+import json
 import sys
 
-sys.path.append('../')
-import json
+sys.path.append(r"/pytest_test\common")
+sys.path.append(r"/pytest_test\common\ptah_object")
 from common.request_ import Request
 from common.ptah_object.Path_ import Basfig_path
 from common.redconfig import red_
