@@ -2,12 +2,11 @@ import json
 from testcase.request_ import Request
 from testcase.Pathtest import Basfig_path
 from testcase.redconfig import red_
-from testcase.loginF import login
 
 
 class Test_login:
     # 初始化登录
-    login().login()
+    # login().login()
     # 期望结果的定义
     expected_outcome = '成功'
     # 更新一个header
