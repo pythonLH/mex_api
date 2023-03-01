@@ -194,7 +194,7 @@ class Test:
         'commercialId': "1",
         'lang': 'zh',
         'organizationId': 'DCMEX',
-        'token': 'f81dbb1c12f24ef5222876db43f078a0',
+        'token': 'da4f9d2747f044f7cba33e12afb8f6ea',
         'Content-Type': 'application/json'
     }
 
