@@ -1,23 +1,20 @@
 import requests
 import pytest
-
-
-def reqHttp(url, data, headers):
-    res = requests.post(url, data, headers)
-    return res.json()
+import json
 
 
 class Test_login:
     def test_01(self):
         url = "https://app.hinance.online/hc/app/noAuth/logon/login"
-        data = {
+
+        payload = json.dumps({
             "promotionChannels": "googlePlay",
             "password": "",
             "flag": 1,
             "phone": "8888888881",
             "shortNo": "9999"
-        }
-        header = {
+        })
+        headers = {
             'app-name': 'Hinance',
             'app-version': '1.0.7',
             'channel': 'googlePlay',
@@ -26,12 +23,12 @@ class Test_login:
             'organizationId': 'DCMEX',
             'Content-Type': 'application/json'
         }
-        res = reqHttp(url, data, header)
-        print(res)
+
+        response = requests.request("POST", url, headers=headers, data=payload).json()
 
         expect = '成功'
-        assert expect == res['msg']
+        assert expect == response['msg']
 
 
 if __name__ == '__main__':
-    pytest.main()
+    pytest.main(['-vs'])
