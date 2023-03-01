@@ -749,3 +749,7 @@ class Test:
             raise e
         # 期望结果 和 实际结果进行比对
         assert self.expected_outcome == resp.get('msg')
+
+
+if __name__ == '__main__':
+    pytest.main()
