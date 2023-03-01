@@ -27,6 +27,7 @@ class Test_login:
             'Content-Type': 'application/json'
         }
         res = reqHttp(url, data, header)
+        print(res)
 
         expect = '成功'
         assert expect == res['msg']
