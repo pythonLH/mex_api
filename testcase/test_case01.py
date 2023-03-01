@@ -1,10 +1,187 @@
+import requests
+import os
+import time
+import logging
 import json
-from testcase.request_ import Request
-from testcase.Pathtest import Basfig_path
-from testcase.redconfig import red_
+import pytest
+import configparser
+
+item_dir = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
+Basfig_path = item_dir + r'\testcase\BasicConfigUration.ini'
+# log_path是存放日志的路径
+cur_path = os.path.dirname(os.path.realpath(__file__))
+log_path = os.path.join(os.path.dirname(cur_path), 'logger')
+
+# 不存在就创建
+if not os.path.exists(log_path):
+    os.mkdir(log_path)
+    if os.path.exists(log_path):
+        os.makedirs(log_path + './error_logs')
+        os.makedirs(log_path + './logs')
+else:
+    pass
+logs_path = log_path + r'\logs'
+err_path = log_path + r'\error_logs'
 
 
-class Test_login:
+class Log(object):
+
+    def __init__(self):
+
+        # 日志名字
+        self.logname = os.path.join(logs_path, '%s.log' % time.strftime('%Y_%m_%d'))
+        self.errorName = os.path.join(err_path, '%s.log' % time.strftime('%Y_%m_%d'))
+
+        self.logger = logging.getLogger()
+        self.logger.setLevel(logging.DEBUG)
+        # 格式
+        self.formatter = logging.Formatter('[%(asctime)s] - %(filename)s] - %(levelname)s: %(message)s')
+
+    def __console(self, level, message):
+
+        # 输出到指定logs
+        fh = logging.FileHandler(self.logname, 'a', encoding='utf-8')
+        fh.setLevel(logging.DEBUG)
+        fh.setFormatter(self.formatter)
+        self.logger.addHandler(fh)
+
+        # 专门用来输出error信息
+        er = logging.FileHandler(self.errorName, 'a', encoding='utf-8')
+        er.setLevel(logging.ERROR)
+        er.setFormatter(self.formatter)
+        self.logger.addHandler(er)
+
+        # 输出到控制台
+        ch = logging.StreamHandler()
+        ch.setLevel(logging.DEBUG)
+        ch.setFormatter(self.formatter)
+        self.logger.addHandler(ch)
+
+        # 区分日志级别
+        if level == 'info':
+            self.logger.info(message)
+        elif level == 'debug':
+            self.logger.debug(message)
+        elif level == 'warning':
+            self.logger.warning(message)
+        elif level == 'error':
+            self.logger.error(message)
+
+        # 避免日志输出重复问题
+        self.logger.removeHandler(ch)
+        self.logger.removeHandler(fh)
+        fh.close()
+
+    def debug(self, message):
+
+        self.__console('debug', message)
+
+    def info(self, message):
+
+        self.__console('info', message)
+
+    def warning(self, message):
+
+        self.__console('warning', message)
+
+    def error(self, message):
+
+        self.__console('error', message)
+
+
+class red_(object):
+    # 初始化库
+    def __init__(self, filename_, encoding: object = 'utf-8'):
+        """
+
+        :rtype: object
+        """
+        self.filename_ = filename_
+        self.encoding_ = encoding
+        self.conf_ = configparser.ConfigParser()
+
+        if os.path.exists(filename_):
+            try:
+                self.red_conf = self.conf_.read(self.filename_)
+            except Exception as e:
+                raise print("加载配置文件出错：%s" % e)
+        else:
+            pass
+
+    # 写入
+    def write_data(self, section, option, value):
+        section_list = self.conf_.sections()
+        if section not in section_list:
+            self.conf_.add_section(section)
+            self.conf_.set(section, option, value)
+        else:
+            self.conf_.set(section, option, value)
+
+        try:
+            with open(self.filename_, "w+") as f:
+                self.conf_.write(f)
+        except FileNotFoundError as e:
+            print("写入配置文件错误: %s" % e)
+            raise e
+
+    # 读取
+    def red_get(self, section, option):
+
+        return self.conf_.get(section, option)
+
+    def red_int(self, section, option):
+
+        return self.conf_.getint(section, option)
+
+    def red_boolean(self, section, option):
+
+        return self.conf_.getboolean(section, option)
+
+
+class Request:
+    def __init__(self, method, url_, body_, cookies=None, headers_=None):
+
+        self.url = red_(Basfig_path).red_get('host_ip', 'url_176')  # 接口前段部分，直接读配置文件
+
+        try:  # 异常处理
+
+            if method == 'get':
+                self.resp = requests.get(url=self.url + url_, params=body_, cookies=cookies, headers=headers_)
+            elif method == 'post':
+                self.resp = requests.post(url=self.url + url_, data=body_, cookies=cookies, headers=headers_)
+            elif method == 'put':
+                self.resp = requests.put(url=self.url + url_, data=body_, cookies=cookies, headers=headers_)
+            elif method == 'head':
+                self.resp = requests.head(url=self.url + url_, data=body_, cookies=cookies, headers=headers_)
+            elif method == 'delete':
+                self.resp = requests.delete(url=self.url + url_, data=body_, cookies=cookies, headers=headers_)
+            elif method == 'options':
+                self.resp = requests.options(url=self.url + url_, data=body_, cookies=cookies, headers=headers_)
+            elif method == 'patch':
+                self.resp = requests.patch(url=self.url + url_, data=body_, cookies=cookies, headers=headers_)
+
+        except Exception as e:
+            Log().error("请求错误:{}".format(e))
+            raise e
+
+    def get_status_code(self):  # 返回响应码
+        return self.resp.status_code
+
+    def get_text(self):  # 返回str类型的响应体
+        return self.resp.text
+
+    def get_json(self):  # 返回dict类型的响应体
+        return self.resp.json()
+
+    def get_cookies(self, key=None):  # 返回cookies
+        print(self.resp.cookies)
+        if key is not None:
+            return self.resp.cookies[key]
+        else:  # key=None，返回整个cookies对象
+            return self.resp.cookies
+
+
+class Test:
     # 初始化登录
     # login().login()
     # 期望结果的定义
@@ -572,7 +749,3 @@ class Test_login:
             raise e
         # 期望结果 和 实际结果进行比对
         assert self.expected_outcome == resp.get('msg')
-
-
-if __name__ == '__main__':
-    pass
