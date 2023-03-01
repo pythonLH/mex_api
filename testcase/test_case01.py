@@ -141,7 +141,7 @@ class red_(object):
 class Request:
     def __init__(self, method, url_, body_, cookies=None, headers_=None):
 
-        self.url = red_(Basfig_path).red_get('host_ip', 'url_176')  # 接口前段部分，直接读配置文件
+        self.url = "http://192.168.122.176:9010"  # 接口前段部分，直接读配置文件
 
         try:  # 异常处理
 
