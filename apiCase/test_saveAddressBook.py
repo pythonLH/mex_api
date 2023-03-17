@@ -21,7 +21,7 @@ class Test_applyOrder:
                'commercialId': '01',
                'lang': 'zh',
                'organizationId': 'DCMEX',
-               'token': red_(Basfig_path).red_get('token', 'token_'),
+               'token': '00a5bc6441c665226342cbdde559e74c',
                'Content-Type': 'application/json'}
 
     def test_saveDeviceInfo(self):
