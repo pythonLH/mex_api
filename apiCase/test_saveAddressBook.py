@@ -3,7 +3,7 @@ from apiMethod.common.request_ import Request
 from apiMethod.common.config_ import red_
 from apiMethod.common.logger_ import Log
 from apiMethod.ospath.ConfigurePaths import Basfig_path
-from apiMethod.login_ import login
+from apiCase.login_ import login
 
 
 class Test_applyOrder:
