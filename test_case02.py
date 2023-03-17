@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import requests
 import pytest
 import json
@@ -33,7 +32,7 @@ class Test_login:
 
 if __name__ == '__main__':
     pytest.main(['-vs'])
-=======
+
 # import requests
 # import pytest
 # import json
@@ -69,4 +68,4 @@ if __name__ == '__main__':
 #
 # if __name__ == '__main__':
 #     pytest.main(['-vs'])
->>>>>>> 4decc10 (测试通过)
+
