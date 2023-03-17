@@ -3,14 +3,14 @@ from apiMethod.common.request_ import Request
 from apiMethod.common.config_ import red_
 from apiMethod.common.logger_ import Log
 from apiMethod.ospath.ConfigurePaths import Basfig_path
-from apiCase.login_ import login
 
 
 class Test_applyOrder:
 
     def setup_class(self):
         # 前置方法中，调用注册登录接口，祈祷(菩萨保佑)生成最新的token
-        login().login()
+        # login().login()
+        pass
 
     def teardown_class(self):
         pass
