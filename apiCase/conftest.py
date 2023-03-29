@@ -7,15 +7,15 @@ from apiMethod.ospath.ConfigurePaths import database_dir
 
 @pytest.fixture(scope="class", autouse=False)
 def class_fixture_login():
-    # 这个接口前端先写死后面，直接引用配置文件
+    # 这个接口前端先写死后面，后面直接引用配置文件
     url = "http://192.168.122.239:7037/hc/app/noAuth/logon/login"
 
     payload = json.dumps({
-        "promotionChannels": "googlePlay",
-        "password": "",
-        "flag": 1,
-        "phone": "1586599999",
-        "shortNo": "9999"
+        "promotionChannels": red_(database_dir).red_get('login_data', 'promotionChannels'),
+        "password": red_(database_dir).red_get('login_data', 'password'),
+        "flag": red_(database_dir).red_get('login_data', 'flag'),
+        "phone": red_(database_dir).red_get('login_data', 'phone'),
+        "shortNo": red_(database_dir).red_get('login_data', 'shortNo')
     })
     headers = {
         'app-name': red_(database_dir).red_get('headers', 'app-name'),

@@ -46,7 +46,6 @@ class Test_OrderNo:
                            body_=payload,
                            headers_=headers,
                            ).get_json()
-
         assert "成功" == response["msg"]
 
 
