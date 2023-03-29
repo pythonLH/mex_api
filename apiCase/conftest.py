@@ -11,12 +11,13 @@ def class_fixture_login():
     url = "http://192.168.122.239:7037/hc/app/noAuth/logon/login"
 
     payload = json.dumps({
-        "promotionChannels": red_(database_dir).red_get('login_data', 'promotionChannels'),
-        "password": red_(database_dir).red_get('login_data', 'password'),
-        "flag": red_(database_dir).red_get('login_data', 'flag'),
-        "phone": red_(database_dir).red_get('login_data', 'phone'),
-        "shortNo": red_(database_dir).red_get('login_data', 'shortNo')
+        "promotionChannels": "googlePlay",
+        "password": "",
+        "flag": "1",
+        "phone": "1586599999",
+        "shortNo": "9999"
     })
+
     headers = {
         'app-name': red_(database_dir).red_get('headers', 'app-name'),
         'app-version': red_(database_dir).red_get('headers', 'app-version'),
@@ -34,3 +35,6 @@ def class_fixture_login():
                                 data=payload).json()
     # 接口依赖，下个接口调用，需要用到的东西
     return response["data"]["token"]
+
+
+
