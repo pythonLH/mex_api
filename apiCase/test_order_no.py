@@ -7,7 +7,7 @@ from apiMethod.common.request_ import Request
 
 class Test_OrderNo:
 
-    def test_01(self, class_fixture):
+    def test_01(self, class_fixture_login):
         url = "/hc/app/loan/queryAvailableProduct"
 
         payload = json.dumps({
@@ -30,7 +30,7 @@ class Test_OrderNo:
             "userExpectedAmount": 0,
             "userExpectedTerm": 0
         })
-        token_ = class_fixture
+        token_ = class_fixture_login
         headers = {
             'app-name': 'Hinance',
             'app-version': '1.0.7',

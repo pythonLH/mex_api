@@ -1,4 +1,7 @@
 import json
+
+import pytest
+
 from apiMethod.common.request_ import Request
 from apiMethod.common.config_ import red_
 from apiMethod.common.logger_ import Log
@@ -21,7 +24,7 @@ class Test_applyOrder:
                'commercialId': '01',
                'lang': 'zh',
                'organizationId': 'DCMEX',
-               'token': '00a5bc6441c665226342cbdde559e74c',
+               'token': 'e622f058140873ec66f8199ac7c5d791',
                'Content-Type': 'application/json'}
 
     def test_saveDeviceInfo(self):
@@ -760,3 +763,7 @@ class Test_applyOrder:
         assert 0 == response["code"]
         assert "成功" == response["msg"]
         assert True is response["success"]
+
+
+if __name__ == '__main__':
+    pytest.main(['-v'])

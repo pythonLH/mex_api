@@ -5,9 +5,8 @@ from apiMethod.common.config_ import red_
 from apiMethod.ospath.ConfigurePaths import database_dir
 
 
-# 夹具中放个登录的请求方法，把token拿到后  用于后面其他接口调用
 @pytest.fixture(scope="class", autouse=False)
-def class_fixture():
+def class_fixture_login():
     # 这个接口前端先写死后面，直接引用配置文件
     url = "http://192.168.122.239:7037/hc/app/noAuth/logon/login"
 
