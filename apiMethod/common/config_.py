@@ -1,6 +1,5 @@
 import configparser
 import os
-from apiMethod.ospath. ConfigurePaths import Basfig_path
 
 
 class red_(object):
@@ -48,12 +47,13 @@ class red_(object):
         return self.conf_.getboolean(section, option)
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
+#     pass
     # path = r"D:\test01\config\BasicConfigUration.ini"
     # t = red_(r"D:\test01\config\BasicConfigUration.ini", "utf-8").red_get('loans_app', 'url')
     # print(t)
     #
     # red_(path).write_data('host_ip', 'url_215', 'http://192.168.122.215:9010')
     # red_(path).write_data('token', 'url_233', 'http://192.168.122.233:9010')
-    t = red_(Basfig_path).red_get('headers', 'login_header')
-    print(t)
+    # t = red_(Basfig_path).red_get('headers', 'login_header')
+    # print(t)

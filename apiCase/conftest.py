@@ -7,7 +7,7 @@ from apiMethod.ospath.ConfigurePaths import database_dir
 
 @pytest.fixture(scope="class", autouse=False)
 def class_fixture_login():
-    # 这个接口前端先写死后面，后面直接引用配置文件
+    # 这个登录接口前端先写死后面，后面直接引用配置文件
     url = "http://192.168.122.239:7037/hc/app/noAuth/logon/login"
 
     payload = json.dumps({
