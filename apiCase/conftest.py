@@ -19,14 +19,14 @@ def class_fixture_login():
     })
 
     headers = {
-        'app-name': red_(database_dir).red_get('headers', 'app-name'),
-        'app-version': red_(database_dir).red_get('headers', 'app-version'),
-        'channel': red_(database_dir).red_get('headers', 'channel'),
-        'commercialId': red_(database_dir).red_get('headers', 'commercialId'),
-        'lang': red_(database_dir).red_get('headers', 'lang'),
-        'organizationId': red_(database_dir).red_get('headers', 'organizationId'),
-        'token': red_(database_dir).red_get('headers', 'token'),
-        'Content-Type': red_(database_dir).red_get('headers', 'Content-Type')
+        'app-name': 'Hinance',
+        'app-version': '1.0.7',
+        'channel': 'googlePlay',
+        'commercialId': '01',
+        'lang': 'zh',
+        'organizationId': 'DCMEX',
+        'token': '',
+        'Content-Type': 'application/json'
     }
 
     response = requests.request("POST",
