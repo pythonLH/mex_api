@@ -1,0 +1,1 @@
+[2023-03-29 16:34:29,343] - logger_.py] - ERROR: 请求错误:Failed to parse: http://192.168.122.239:7037http://192.168.122.239:7037/hc/app/loan/queryAvailableProduct

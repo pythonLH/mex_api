@@ -84,7 +84,10 @@ class Test_applyOrder:
                             "82, -88, -99, -109, -86, 54, 97, 106, -31, -37, -49, 74, -32] "
         })
         try:
-            response = Request('post', url_=url, body_=payload, headers_=self.headers, cookies=None).get_json()
+            response = Request('post', url_=url,
+                               body_=payload,
+                               headers_=self.headers,
+                               cookies=None).get_json()
         except Exception as e:
             Log().error("请求接口报错：{0}".format(e))
             raise e
