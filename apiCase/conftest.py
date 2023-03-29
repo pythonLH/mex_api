@@ -8,14 +8,14 @@ from apiMethod.ospath.ConfigurePaths import database_dir
 @pytest.fixture(scope="class", autouse=False)
 def class_fixture_login():
     # 这个登录接口前端先写死后面，后面直接引用配置文件
-    url = "http://192.168.122.239:7037/hc/app/noAuth/logon/login"
+    url = "https://app.hinance.online/hc/app/noAuth/logon/login"
 
     payload = json.dumps({
         "promotionChannels": "googlePlay",
         "password": "",
         "flag": "1",
-        "phone": "1586599999",
-        "shortNo": "9999"
+        "phone": "6666666661",
+        "shortNo": "3927"
     })
 
     headers = {
@@ -33,8 +33,10 @@ def class_fixture_login():
                                 url,
                                 headers=headers,
                                 data=payload).json()
+
     # 接口依赖，下个接口调用，需要用到的东西
     return response["data"]["token"]
+
 
 
 
