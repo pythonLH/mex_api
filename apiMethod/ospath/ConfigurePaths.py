@@ -1,17 +1,18 @@
 import os
 
-item_dir = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
-# 根路径路径
-_dir = os.path.split(os.path.split(os.path.split(os.path.realpath(__file__))[0])[0])[0]
+# 当前文件路径
+# print((os.path.realpath(__file__)))
+# print(os.path.dirname(os.path.realpath(__file__)))
+# print(os.path.dirname(os.path.realpath(__file__)))
+# print(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+# print(os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__)))))
 
-# databasepe配置文件路径
-database_dir = os.path.join(item_dir + r'\config\database.ini')
-
-# 测试文件
-case_dir = _dir + r'\case'
-# 测试报告路径:
-report_dir = _dir + r'\repos'
-report_html = report_dir + r'Into_an_interface.html'
-# 配置文件路径
-Basfig_path = item_dir + r'\config\BasicConfigUration.ini'
-
+# 跟目录
+_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+# method目录
+item_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+# 配置文件
+database_dir = os.path.join(item_dir, 'config', 'database.ini')
+Basfig_path = os.path.join(item_dir, 'config', 'BasicConfigUration.ini')
+print("配置文件的路径:{}".format(database_dir))
+print("配置文件的路径:{}".format(Basfig_path))

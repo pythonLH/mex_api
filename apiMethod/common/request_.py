@@ -1,8 +1,9 @@
 import requests
 import json
 from apiMethod.logmethod.logger_ import Log
-from apiMethod.ospath. ConfigurePaths import Basfig_path
+from apiMethod.ospath.ConfigurePaths import Basfig_path
 from apiMethod.common.config_ import red_
+
 """Requests封装类
 实现只需调用一个方法，来支持完成多种请求方式（get,post,delete....）的请求"""
 
@@ -51,25 +52,29 @@ class Request:
 
 
 if __name__ == '__main__':
-    url = "/hc/app/noAuth/logon/doRegister"
-    data = {
+    url = "https://app.hinance.online/hc/app/noAuth/logon/login"
+
+    payload = json.dumps({
         "promotionChannels": "googlePlay",
         "password": "",
-        "flag": "01",
-        "phone": "2221593587",
-        "countryCode": "52",
-        "shortNo": "9999"
-    }
-
+        "flag": 1,
+        "phone": "6666666661",
+        "shortNo": "3927"
+    })
     headers = {
         'app-name': 'Hinance',
         'app-version': '1.0.7',
         'channel': 'googlePlay',
-        'commercialId': "1",
+        'commercialId': '01',
         'lang': 'zh',
         'organizationId': 'DCMEX',
-        'token': '',
         'Content-Type': 'application/json'
     }
-    t = Request('post', url_=url, body_=json.dumps(data), headers_=headers, cookies=None)
-    print(t.get_json())
+
+    response = Request('post', url_=url,
+                       body_=payload,
+                       headers_=headers,
+                       ).get_json()
+
+    expect = '成功'
+    assert expect == response['msg']
