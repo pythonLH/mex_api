@@ -10,12 +10,13 @@ log_path = os.path.join(os.path.dirname(cur_path), 'logmethod')
 if not os.path.exists(log_path):
     os.mkdir(log_path)
     if os.path.exists(log_path):
-        os.makedirs(log_path + './error_logs')
-        os.makedirs(log_path + './logs')
+        os.makedirs(os.path.join(log_path, 'error_logs'))
+        os.makedirs(os.path.join(log_path, 'logs'))
 else:
     pass
-logs_path = log_path + r'\logs'
-err_path = log_path + r'\error_logs'
+logs_path = os.path.join(log_path, 'logs')
+logs_path2 = os.path.join(log_path, 'logs')
+err_path = os.path.join(log_path, 'error_logs')
 
 
 # 封装一个日志
@@ -86,4 +87,4 @@ class Log(object):
 
 
 if __name__ == "__main__":
-    pass
+    Log().debug("shuchu")
